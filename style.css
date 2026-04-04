@@ -1,0 +1,49 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.field{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 767px) {
+  /*ウィンドウ幅が767px以上の場合に適用*/
+}
+
+/* タブレット用 */
+@media screen and (max-width: 767px) {
+  /*ウィンドウ幅が最大767pxまでの場合に適用*/
+}
+
+/* スマホ用 */
+@media screen and (max-width: 479px) {
+    .top_menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 10vh;
+        background-color: black;
+    }
+    .maineria{
+        position: absolute;
+        background-color: green;
+        top: 15vh;
+        left: 1.5vw;
+        width: 85vw;
+        height: 85vh;
+        overflow-y: scroll;
+        z-index: 3;
+        -ms-overflow-style: none;    /* IE, Edge 対応 */
+        scrollbar-width: none;       /* Firefox 対応 */
+    }
+    .meineria::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+        display:none;
+    }
+    .allContents {
+        display: block;
+    }
+}
